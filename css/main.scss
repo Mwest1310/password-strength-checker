@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    font-family: serif, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+
+    body{
+        width: inherit;
+        height: inherit;
+
+        #root{
+            width: inherit;
+            height: inherit;
+
+            #background{
+                width: inherit;
+                height: inherit;
+            }
+        }
+    }
+}
+
+
+#container{
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 25%;
+    width: 25%;
+}
+
+#toggle-div {
+    display: flex;
+    justify-content: end;
+
+    #toggle {
+        width: 25px;
+        height: 15px;
+        margin: 5px 5px 0 0;
+        cursor: pointer;
+    }
+}
+
+
+
+#input{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+
+    #password{
+        margin: 10px 5px;
+        width: 90%;
+        height: 30px;
+        font-size: inherit;
+    }
+
+    #submit{
+        height: 30px;
+        width: 60px;
+        font-size: inherit;
+        cursor: pointer;
+    }
+}
+
+
+
+#output{
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+
+
+.light {
+    .outer{
+        background-color: white;
+    }
+    .inner{
+        background-color: rgb(211, 211, 211);
+    }
+    .text{
+        color: black;
+    }
+    .input-background{
+        background-color: rgb(211, 211, 211);
+    }
+}
+
+.dark {
+    .outer{
+        background-color: rgb(22, 22, 22);
+    }
+    .inner {
+        background-color: rgb(34, 41, 41);
+    }
+    .text{
+        color: white;
+    }
+    .input-background{
+        background-color: rgb(34, 41, 41);
+    }
+}

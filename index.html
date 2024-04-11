@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/main.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>Password Strength Checker</title>
+</head>
+<body>
+    <div id = "root" class = "dark">
+        <div id = "background" class = "outer">
+            <div id = "container" class = "inner">
+                <div id = "toggle-div">
+                    <button id = "toggle" onclick = "changeTheme()"></button>
+                </div>
+                
+                <form id = "input">
+                    <label class = "text">Please input a password</label>
+                    <input type = "password" id = "password" class = "text input-background">
+                    <input type = "button" id = "submit" class = "text input-background">
+                </form>
+                <div id = "output">
+                    <p class = "text" id = "advice"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
