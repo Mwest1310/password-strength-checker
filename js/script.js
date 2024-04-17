@@ -1,7 +1,8 @@
 
 
 const changeTheme = () => {
-    $("#root").hasClass("dark") ? $("#root").removeClass("dark").addClass("light") : $("#root").removeClass("light").addClass("dark")
+    $("#root").hasClass("dark") ? $("#root").removeClass("dark").addClass("light") : $("#root").removeClass("light").addClass("dark");
+    $("li").hasClass("fa-lightbulb") ? $("li").removeClass("fa-lightbulb").addClass("fa-moon") : $("li").removeClass("fa-moon").addClass("fa-lightbulb");
 }
 
 

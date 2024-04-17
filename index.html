@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel = "stylesheet" href = "css/main.css">
+    <script src="https://kit.fontawesome.com/ccdd94406f.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
     <title>Password Strength Checker</title>
@@ -13,13 +15,13 @@
         <div id = "background" class = "outer">
             <div id = "container" class = "inner">
                 <div id = "toggle-div">
-                    <button id = "toggle" onclick = "changeTheme()"></button>
+                    <button id = "toggle" onclick = "changeTheme()"><li class = "fa-solid fa-moon"></li></button>
                 </div>
                 
                 <form id = "input">
                     <label class = "text">Please input a password</label>
                     <input type = "password" id = "password" class = "text input-background">
-                    <input type = "button" id = "submit" class = "text input-background">
+                    <input type = "button" id = "submit" class = "text input-background" value = "Submit">
                 </form>
                 <div id = "output">
                     <p class = "text" id = "advice"></p>
