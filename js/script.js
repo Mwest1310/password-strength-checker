@@ -41,18 +41,22 @@ jQuery(function() {
         switch(strength) {
             case 1:
                 $("#advice").text(strength + " : Your password is not strong enough. Try to include capital letters, numbers and special characters");
+                $("#bar").removeClass().addClass("one")
                 break;
             
             case 2:
                 $("#advice").text(strength + " : Your password is somewhat strong, but should be improved. Try to include capital letters, numbers and/or special characters");
+                $("#bar").removeClass().addClass("two")
                 break;
 
             case 3:
                 $("#advice").text(strength + " : Your password is strong but can still be improved. Try to include capital letters, numbers or special characters");
+                $("#bar").removeClass().addClass("three")
                 break;
 
             case 4:
                 $("#advice").text(strength + " : Your password is very strong. Congratulations!")
+                $("#bar").removeClass().addClass("four")
                 break;
         }
     })
