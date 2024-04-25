@@ -117,19 +117,23 @@ html body #root #background {
 .one {
   width: 25%;
   background-color: red;
+  transition-duration: 1000ms;
 }
 
 .two {
   width: 50%;
   background-color: yellow;
+  transition-duration: 1000ms;
 }
 
 .three {
   width: 75%;
   background-color: greenyellow;
+  transition-duration: 1000ms;
 }
 
 .four {
   width: 100%;
   background-color: green;
+  transition-duration: 1000ms;
 }/*# sourceMappingURL=main.css.map */

@@ -19,6 +19,7 @@ jQuery(function() {
         $password = $("#password").val();
         if($password.length < 8) {
             $("#advice").text("Your password must be 8+ characters long");
+            $("#bar").removeClass().addClass("zero");
             return;
         }
         if(/\s/.test($password)) {
@@ -39,24 +40,25 @@ jQuery(function() {
         }
         console.log(strength);
         switch(strength) {
+            
             case 1:
                 $("#advice").text(strength + " : Your password is not strong enough. Try to include capital letters, numbers and special characters");
-                $("#bar").removeClass().addClass("one")
+                $("#bar").removeClass().addClass("one");
                 break;
             
             case 2:
                 $("#advice").text(strength + " : Your password is somewhat strong, but should be improved. Try to include capital letters, numbers and/or special characters");
-                $("#bar").removeClass().addClass("two")
+                $("#bar").removeClass().addClass("two");
                 break;
 
             case 3:
                 $("#advice").text(strength + " : Your password is strong but can still be improved. Try to include capital letters, numbers or special characters");
-                $("#bar").removeClass().addClass("three")
+                $("#bar").removeClass().addClass("three");
                 break;
 
             case 4:
                 $("#advice").text(strength + " : Your password is very strong. Congratulations!")
-                $("#bar").removeClass().addClass("four")
+                $("#bar").removeClass().addClass("four");
                 break;
         }
     })
