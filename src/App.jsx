@@ -73,10 +73,10 @@ function App() {
             <div id="password-checker-container">
                 <div id="toggle-row"><FontAwesomeIcon onClick={handleModeChange} id="toggle" icon={mode === "dark-mode" ? faLightbulb : faMoon} /></div>
                 <h1>Please Enter Your Password Below</h1>
-                <form id="input">
+                <div id="input">
                     <label for="password">Make your password at least 8 characters long</label>
                     <input name="password" value={password} type="text" placeholder="Please input your password" id="password" onChange={checkPassword}></input>
-                </form>
+                </div>
                 <div id="output-checks">
                     <p id="num-of-characters" className={numOfChars >= 12 ? "active" : "inactive"}>{numOfChars} Characters</p>
                     <div id="check-display">
