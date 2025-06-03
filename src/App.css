@@ -17,7 +17,7 @@ html, body {
 }
 
 #password-checker-container {
-    width: 513px;
+    width: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -25,6 +25,7 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: 2.5em;
+    padding: 0 5vw;
 }
 
 #toggle-row {
@@ -148,4 +149,13 @@ h1 {
     background-color: #15b400;
     width: 100%;
     transition: 1s;
+}
+
+
+
+
+@media only screen and (max-width: 830px) {
+    #password-checker-container {
+    width: 100%;
+  }
 }
