@@ -20,6 +20,7 @@ function App() {
     };
 
     const checkPassword = (e) => {
+        e.preventDefault();
         const newPassword = e.target.value;
         setPassword(newPassword);
 
